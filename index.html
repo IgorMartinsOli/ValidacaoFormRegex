@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Validação Formulários</title>
+   <style>
+      label{
+         display: block;
+      }
+
+      .certo{
+         border: 2px solid green;
+      }
+
+      .errado{
+         border: 2px solid red;
+      }
+   </style>
+</head>
+<body>
+   <form name="cadastro">
+      <label>Nome:<br>
+         <input type="text" name="nome"/>
+      </label>
+      <label>Idade:<br>
+         <input type="number" name="idade"/>
+      </label>
+      <label>Data de Nascimento:<br>
+         <input type="text" name="dtNasc"/>
+      </label>
+      <label>CPF / CNPJ:<br>
+         <input type="text" name="cpfCnpj"/>
+      </label>
+      <label>E-mail:<br>
+         <input type="text" name="email"/>
+      </label>
+      <label>Telefone:<br>
+         <input type="text" name="telefone"/>
+      </label>
+      <br>
+      <div id="divSexo">Sexo: 
+         <label>
+            <input type="radio" name="sexo" value="M"/> Masculino
+         </label>
+         <label>
+            <input type="radio" name="sexo" value="F"/> Feminino
+         </label>
+      </div>
+      <br>
+      <div id="divIdiomas"> Idiomas: <br>
+         <label>
+            <input type="checkbox" name="idiomas" value="pt-br"/>Português
+         </label>
+         <label>
+            <input type="checkbox" name="idiomas" value="eng"/>Inglês
+         </label>
+         <label>
+            <input type="checkbox" name="idiomas" value="esp"/>Espanhol
+         </label>
+         <label>
+            <input type="checkbox" name="idiomas" value="rus"/>Russo
+         </label>
+         <label>
+            <input type="checkbox" name="idiomas" value="chi"/>Chinês
+         </label>
+      </div>
+      <br>
+      <label>Estados:<br>
+         <select name="estados">
+            <option>Selecione um estado</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="GO">Goiás</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MT">Mato Grosso</option>
+         </select>
+      </label>
+      <br>
+      <label>Cidades:<br>
+         <select name="cidades">
+            <option>Selecione uma cidade</option>
+            <option value="UDI">Uberlândia</option>
+            <option value="MHS">Morrinhos</option>
+            <option value="CNV">Caldas Novas</option>
+            <option value="GTB">Goiatuba</option>
+            <option value="PTL">Pontalina</option>
+            <option value="RQT">Rio Quente</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+         </select>
+      </label>
+     
+      <br>
+      <input type="submit" value="Enviar">
+   </form>
+   <script src="index.js"></script>
+</body>
+</html>
